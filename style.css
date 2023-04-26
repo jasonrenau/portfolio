@@ -388,8 +388,7 @@ ul {
 
 /* ====================hero==================== */
 .hero {
-  min-height: 100vh;
-  margin-top: 5rem;
+  padding-block: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,41 +441,45 @@ ul {
 /*================== exploration============== */
 .exploration {
   min-height: 100vh;
-}
-/* design */
-.exploration .design {
-  margin-inline: auto;
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   width: var(--view-width);
   max-width: var(--max-width);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.design .design-text {
-}
-.design .design-img {
-  background: url(./images/design.jpg);
-  height: 20rem;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
-}
-
-/* domain */
-.exploration .domaine {
+  padding-block: 15rem;
   margin-inline: auto;
-  width: var(--view-width);
-  max-width: var(--max-width);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
-.domaine .domaine-img {
-  background: url(./images/maquette.jpg);
-  height: 20rem;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+/* mechanique animation */
+.mecanique {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 50%);
+  /* animation: turn 3s linear infinite; */
+}
+@keyframes turn {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
 
-.domaine .domaine-text {
+.mecanique img {
+  width: 10rem;
+}
+
+.container h2 {
+  background: linear-gradient(
+    270deg,
+    rgba(138, 138, 138, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
