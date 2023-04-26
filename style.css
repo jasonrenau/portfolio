@@ -440,24 +440,43 @@ ul {
 }
 
 /*================== exploration============== */
+.exploration {
+  min-height: 100vh;
+}
+/* design */
 .exploration .design {
   margin-inline: auto;
   width: var(--view-width);
   max-width: var(--max-width);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.design .design-img {
-  background: url(./images/javascript.jpg);
-  height: 20rem;
-  background-attachment: fixed;
-  grid-column: 1/2;
-  grid-row: 0/1;
 }
 
 .design .design-text {
-  grid-column: 2/3;
-  grid-row: 2/3;
+}
+.design .design-img {
+  background: url(./images/design.jpg);
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+/* domain */
+.exploration .domaine {
+  margin-inline: auto;
+  width: var(--view-width);
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.domaine .domaine-img {
+  background: url(./images/maquette.jpg);
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.domaine .domaine-text {
 }
