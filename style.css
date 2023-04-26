@@ -305,7 +305,7 @@ ul {
   min-height: 100vh;
 }
 
-/*============= header============= */
+/*============== header================================ */
 .navbar {
   width: var(--view-width);
   max-width: var(--max-width);
@@ -386,9 +386,9 @@ ul {
   }
 }
 
-/* hero */
+/* ====================hero==================== */
 .hero {
-  min-height: calc(100vh -89px);
+  min-height: 100vh;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -437,4 +437,27 @@ ul {
   font-weight: 500;
   font-family: var(--bodyFontP);
   letter-spacing: var(--letter-spacing);
+}
+
+/*================== exploration============== */
+.exploration .javascript {
+  margin-inline: auto;
+  width: var(--view-width);
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.javascript .javascript-img {
+  background: url(./images/javascript.jpg);
+  height: 20rem;
+  background-attachment: fixed;
+  grid-column: 1/2;
+  grid-row: 0/1;
+}
+
+.javascript .javascript-text {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
