@@ -443,22 +443,23 @@ ul {
   min-height: 100vh;
   display: grid;
   position: relative;
+  align-items: center;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: var(--view-width);
   max-width: var(--max-width);
-  padding-block: 15rem;
+  margin-block: 10rem;
   margin-inline: auto;
 }
 
 /* mechanique animation */
 .mecanique {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(50%, 50%);
-  /* animation: turn 3s linear infinite; */
+  justify-self: center;
+}
+.mecanique img {
+  animation: turn 3s linear infinite;
 }
 @keyframes turn {
   0% {
@@ -472,12 +473,21 @@ ul {
 .mecanique img {
   width: 10rem;
 }
+/* .exploration .html,
+.exploration .javascript {
+  text-align: left;
+}
 
-.container h2 {
+.exploration .css,
+.exploration .react {
+  text-align: right;
+} */
+
+.exploration h2 {
   background: linear-gradient(
-    270deg,
+    90deg,
     rgba(138, 138, 138, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(255, 255, 255, 1) 50%
   );
   background-clip: text;
   -webkit-background-clip: text;
