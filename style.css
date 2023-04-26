@@ -440,7 +440,7 @@ ul {
 }
 
 /*================== exploration============== */
-.exploration .javascript {
+.exploration .design {
   margin-inline: auto;
   width: var(--view-width);
   max-width: var(--max-width);
@@ -449,7 +449,7 @@ ul {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.javascript .javascript-img {
+.design .design-img {
   background: url(./images/javascript.jpg);
   height: 20rem;
   background-attachment: fixed;
@@ -457,7 +457,7 @@ ul {
   grid-row: 0/1;
 }
 
-.javascript .javascript-text {
+.design .design-text {
   grid-column: 2/3;
   grid-row: 2/3;
 }
