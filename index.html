@@ -20,7 +20,7 @@
       <!-- partie gauche nav -->
       <div class="mail">
         <button type="button" class="mailbutton"><i class="fa-regular fa-envelope"></i></button>
-        <span>Me contacter</span>
+        <a href="#">Me contacter</a>
       </div>
       <!-- partie droite nav grand ecrans -->
       <div class="reseaux-1">
@@ -49,8 +49,7 @@
       <div class="hero-text">
         <h1>Développeur web, front end et back end.</h1>
       </div>
-      <button type="button" class="btn">
-        Voir mes projets
+      <button type="button" class="btn"><a href="#projet">Voir mes projets</a>
       </button>
     </section>
     <!-- fin hero -->
@@ -59,12 +58,14 @@
     <section class="section exploration">
       <h2>Profitez des nouvelles technologie</h2>
       <article class="exploration-cards">
+        <!-- icons roullette -->
+        <span class="mecanique"><img src="./images/icons/roulette.png" alt=""></span>
         <!-- carte 1 -->
         <div class="card">
           <div class="card-img"><i class="fas fa-laptop-code"></i></div>
           <div class="card-text">
             <h3>Développement</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi id possimus vero omnis molestias illo?
+            <p>Que ce soit pour une page de présentation, pour un site de vente ou même un blog..
             </p>
           </div>
         </div>
@@ -73,7 +74,7 @@
           <div class="card-img"><i class="fas fa-mobile-screen"></i></div>
           <div class="card-text">
             <h3>Mobile</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi id possimus vero omnis molestias illo?
+            <p>Site conçu pour etre fonctionel, adaptable et parfaitement compatible sur mobile.
             </p>
           </div>
         </div>
@@ -83,8 +84,7 @@
           <div class="card-img"><i class="fab fa-react"></i></div>
           <div class="card-text">
             <h3>React</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi id possimus vero omnis molestias
-              illo?
+            <p>technologie REACT pour des interfaces utilisateurs dynamique, puissant et modulable.
             </p>
           </div>
         </div>
@@ -93,28 +93,76 @@
           <div class="card-img"><i class="fas fa-object-group"></i></div>
           <div class="card-text">
             <h3>Désign</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi id possimus vero omnis molestias
-              illo?
+            <p>Donnez vie à votre projet selon les tendances et modes du web.
             </p>
           </div>
         </div>
       </article>
     </section>
     <!-- cartes mes projets -->
-    <section class="section projets">
+    <section id="projet" class="section projets">
       <h2>Mes projets</h2>
-      <article class="cards">
-        <!-- carte 1 -->
-        <div class="card">
-          <card class="img">
-            <img src="https://placehold.co/300x400" alt="">
-          </card>
-        </div>
-      </article>
+      <section id="slider" class="container">
+        <ul class="slider-wrapper">
+          <li class="current-slide">
+            <img src="./images/projet1.jpg" title="" alt="">
+            <div class="caption">
+              <h2 class="slider-title">Diseño web</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, placeat est. Alias illo hic quo
+                nobis,
+                aspernatur iste ut voluptate.</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="https://placehold.co/800x400" title="" alt="">
+
+            <div class="caption">
+              <h2 class="slider-title">Diseño Responsive</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto placeat aliquid tempore harum,
+                similique!</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="https://placehold.co/800x400" title="" alt="">
+
+            <div class="caption">
+              <h2 class="slider-title">Identidad Corporativa</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dicta laudantium voluptatem
+                minima!
+                Dolorum tempore dolores excepturi omnis provident. Commodi quis aperiam maiores, dolore a perferendis!
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <img src="https://placehold.co/800x400" title="" alt="">
+
+            <div class="caption">
+              <h2 class="slider-title">Desarrollo Web</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dignissimos laudantium.</p>
+            </div>
+          </li>
+        </ul>
+        <!-- Sombras -->
+        <div class="slider-shadow"></div>
+        <!-- Controles de Navigation -->
+        <ul id="control-buttons" class="control-buttons"></ul>
+      </section>
     </section>
-
-
   </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="copyright">
+      <p>Copyright 2023</p>
+    </div>
+  </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
