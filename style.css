@@ -4,8 +4,7 @@ JASON.R - Styles
 ===========================
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 :root {
   --bodyFontH: "Roboto", sans-serif;
@@ -283,7 +282,7 @@ ul {
 
 /* section */
 .section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 /* titre */
@@ -311,7 +310,7 @@ ul {
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr auto;
   padding: 1rem;
   align-items: center;
   border-bottom: 1px solid rgb(45, 45, 45);
@@ -327,7 +326,6 @@ ul {
 .mail .mailbutton {
   border-style: none;
   color: var(--primary-400);
-  font-weight: 200;
   font-size: 1.2rem;
   width: 3.5rem;
   height: 3.5rem;
@@ -340,7 +338,6 @@ ul {
   color: var(--textColor);
   font-family: var(--bodyFontP);
   font-size: 1rem;
-  font-weight: 200;
   transition: var(--transition);
 }
 .mail a:hover {
@@ -355,7 +352,6 @@ ul {
   color: var(--textColor);
   font-family: var(--bodyFontP);
   font-size: 1rem;
-  font-weight: 400;
   transition: var(--transition);
 }
 .reseaux-1 a:hover {
@@ -367,6 +363,13 @@ ul {
   margin: 0rem 0.3rem;
   transform: scaleX(-1);
 }
+
+@media screen and (max-width: 768px) {
+  .reseaux-1 {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .reseaux-2 {
     display: none;
@@ -382,36 +385,24 @@ ul {
   color: var(--textColor);
 }
 
-@media screen and (max-width: 768px) {
-  .reseaux-1 {
-    display: none;
-  }
-  .navbar {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
-    align-items: center;
-  }
-}
-
 /* ====================hero==================== */
 .hero {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+  text-align: center;
   width: 80vw;
   max-width: var(--max-width);
   margin-inline: auto;
   border-bottom: 1px solid rgb(45, 45, 45);
 }
-.hero .hero-img {
+/* .hero .hero-img {
   display: flex;
   flex-direction: column;
-}
-.hero .hero-img span {
+} */
+/* .hero .hero-img span {
   text-align: center;
-}
+} */
 
 .hero .hero-img img {
   width: 13rem;
@@ -444,7 +435,7 @@ ul {
 }
 .hero .btn a {
   font-size: 1rem;
-  font-weight: 500;
+  /* font-weight: 500; */
   color: var(--textColor);
   font-family: var(--bodyFontP);
   letter-spacing: var(--letter-spacing);
@@ -459,7 +450,7 @@ ul {
 .exploration h2 {
   font-family: var(--bodyFontP);
   padding: 0.2rem;
-  margin-block: 5rem;
+  margin-bottom: 5rem;
   text-align: center;
   background: linear-gradient(
     90deg,
@@ -475,18 +466,20 @@ ul {
   display: grid;
   position: relative;
   gap: 2rem;
-  grid-template-columns: repeat(1, 1fr);
 }
 
 .exploration .card {
+  background-color: #141414e6;
   background-color: rgba(20, 20, 20, 0.9);
   border: 1px solid rgba(45, 45, 45, 1);
   display: grid;
   z-index: 1;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 0 1rem;
   border-radius: var(--border-radius);
   grid-template-rows: repeat(2, 1fr);
   transition: var(--transition);
+  /* cursor: pointer; */
 }
 .exploration .card:hover {
   transform: translateY(5%);
@@ -555,6 +548,7 @@ ul {
 .projets h2 {
   text-align: center;
   font-family: var(--bodyFontP);
+  margin-bottom: 5rem;
   padding: 1rem;
   background: linear-gradient(
     90deg,
@@ -579,7 +573,7 @@ ul {
  ----------------------------------------*/
 .container {
   width: 800px;
-  margin: 40px auto 0;
+  margin: 0 auto;
 }
 
 .slider-wrapper {
@@ -673,13 +667,13 @@ ul {
 .slider-wrapper h2 {
   color: #00c5b9;
   font-size: 2em;
-  font-weight: 400;
+  /* font-weight: 400; */
   margin-bottom: 6px;
 }
 
 .slider-wrapper p {
   font-size: 1.6em;
-  font-weight: 300;
+  /* font-weight: 300; */
   line-height: 1.4em;
 }
 
@@ -713,7 +707,7 @@ ul {
   color: #7a8699;
   display: block;
   font-size: 1.6em;
-  font-weight: 300;
+  /* font-weight: 300; */
   margin-top: 80px;
   font-size: 300;
 }
@@ -735,7 +729,7 @@ ul {
   .container {
     padding: 5px;
     width: 100%;
-    margin: 40px 0 0 0;
+    margin: 0 auto;
   }
 
   .slider-wrapper {
@@ -755,11 +749,8 @@ ul {
 /* ===============section footer============ */
 .footer {
   text-align: center;
-  width: var(--view-width);
-  max-width: var(--max-width);
   border-top: 1px solid rgb(45, 45, 45);
-  padding-block: 3rem;
-  margin: 0 auto;
+  /* padding-block: 0.5rem; */
 }
 .footer p {
   font-family: var(--bodyFontP);
