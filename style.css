@@ -564,7 +564,20 @@ ul {
 @media screen and (min-width: 768px) {
   .projets .photo {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    grid-template-areas:
+      "a b"
+      "a b"
+      "c c";
+  }
+  .photo1 {
+    grid-area: a;
+  }
+  .photo2 {
+    grid-area: b;
+  }
+  .photo3 {
+    grid-area: c;
   }
 }
 @media screen and (min-width: 1120px) {
